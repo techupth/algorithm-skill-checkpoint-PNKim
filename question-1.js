@@ -1,5 +1,12 @@
 function findStudentById(students, id) {
   // Your code here
+  let result = null;
+  for (let each of students) {
+    if (each.id === id) {
+      result = each;
+    }
+  }
+  return result;
 }
 
 // Test case
